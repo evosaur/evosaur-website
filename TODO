@@ -1,0 +1,3 @@
+Should we switch to HTML5?  Of course we'd keep the good habit of closing all
+tags (i.e. <br /> instead of <br>), HTML5 indeed adds some nice features and is
+quite widely supported.  XHTML 1.0 Strict is also weird with metadata.
