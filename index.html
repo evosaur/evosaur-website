@@ -6,12 +6,36 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<meta charset="utf-8" />
 	</head>
-	<body class="indent">
+	<body>
 		<h1>The Evosaur Project</h1>
+		<p>
+		<!--TODO: Yeah, we need to write something real in here sometime...-->
+		The Evosaur Project intends to be a parent metaproject for alternatives to modern computing, including but not limited to the fields of CPU architectures, operating systems, networking protocols, and userspace programs.
+		</p>
+		<p>
+		<small>
+		(Everything here is work-in-progress.)
+		</small>
+		</p>
+		<h2>Philosophy</h2>
+		<ul>
+			<li>
+			Do what the programmer writes.  For example, the compiler MUST NOT do GCC-style optimizations such as replacing <code>printf("Hello, world!\n")</code> with <code>puts("Hello, world!")</code> (C example, we'll use our own language when that happens).  However, as humans often make mistakes (i.e. it is rarely wanted to use <code>printf</code> instead of <code>puts</code> for printing a single string), linters SHOULD be able to detect that (and more subtle issues like double-free, use-after-free, potential buffer overflows, etc) and offer alternatives.  But in no circumstance should the computer do differently than told.
+			</li>
+		</ul>
 		<h2>Licensing</h2>
 		<p>
 		Unlike most of <a href="https://www.andrewyu.org/>">Andrew</a> and <a href="https://users.andrewyu.org/hax/">Test_User</a>'s Websites, this Website conveys new ideas that may be fundemental to future computing, thus ruling out Public Domain as a ``licensing'' option.  Some type of copyleft will be used but we can't decide which specifically for now.  Until then, please contact <code>evosaur AT andrewyu DOT org</code> for permission to use.
 		</p>
+		<h2>Community</h2>
+		<ul>
+			<li>
+			Mailing list: <code>evosaur AT andrewyu DOT org</code>
+			</li>
+			<li>
+			Internet relay chat: <code>#evosaur</code> on <code>irc.andrewyu.org</code>
+			</li>
+		</ul>
 		<div id="footer">
 			<hr />
 			<p><a href="/">The Evosaur Project</a></p>
