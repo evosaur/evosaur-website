@@ -10,17 +10,15 @@
 		<h1>The Evosaur Project</h1>
 		<p>
 		<!--TODO: Yeah, we need to write something real in here sometime...-->
-		The Evosaur Project intends to be a parent metaproject for alternatives to modern computing, including but not limited to the fields of CPU architectures, operating systems, networking protocols, and userspace programs.
-		</p>
-		<p>
-		<small>
-		(Everything here is work-in-progress.)
-		</small>
+		The Evosaur Project intends to be a parent metaproject for alternatives to modern computing, including but not limited to the fields of CPU architectures, operating systems, networking protocols, and userspace programs.  Currently everything here is in early stages; things will likely remain work-in-progress for a few decades.
 		</p>
 		<h2>Philosophy</h2>
 		<ul>
 			<li>
 			Do what the programmer writes.  For example, the compiler MUST NOT do GCC-style optimizations such as replacing <code>printf("Hello, world!\n")</code> with <code>puts("Hello, world!")</code> (C example, we'll use our own language when that happens).  However, as humans often make mistakes (i.e. it is rarely wanted to use <code>printf</code> instead of <code>puts</code> for printing a single string), linters SHOULD be able to detect that (and more subtle issues like double-free, use-after-free, potential buffer overflows, etc) and offer alternatives.  But in no circumstance should the computer do differently than told.
+			</li>
+			<li>
+			Simplicity in data storage.  Simple binary protocols and data formats, no excessive markup like XML.
 			</li>
 		</ul>
 		<h2>Repositories</h2>
@@ -30,23 +28,20 @@
 			<li><a href="https://git.andrewyu.org/evosaur/specification.git">The Evosaur Specification</a></li>
 			<li><a href="https://git.andrewyu.org/evosaur/license.git">Evosaur Copyright, License and (anti-)Patent Lab</a></li>
 		</ul>
-		<h2>Thoughts</h2>
+		<h2 id="licensing">Licensing</h2>
 		<p>
-		These are incomplete (as in not complete enough to be in a specification of any kind) thoughts that we had.
+		This project has ideas fundemental to computing in a way that may be revolutionary.  We do not want to see surrounding technologies becoming patent-infested by large coorporations and other entities that don't support and sabotage free technical development; we want things to remain free (as in freedom), giving people the opportunity to design, produce and freely deal with their own hardware, software, and related matters.  Thus ultimately we want a strong copyleft license that (1) works of the nature of work we are working on, especially CPU and architecture designs and (2) grants patent licenses under copyleft-like terms, such that the utilization of covered patented technology is allowed if the implementation is free.  If patent and copyright law is less braindead in the future and production of technology is not that monopolized, we may consider releasing this project into the public domain.  But currently that isn't the case and we don't see a copyleft license fit for our purposes, and while efforts are being made to create such a license, license-writing is a serious legal matter requiring lawyers and such, while we want to focus on technical development first.  So currently, to ``play safe'', no permissions are granted&mdash;all rights reserved.  Please tell the mailing list or the developers directly if you know of an applicable license or would otherwise help with licensing.
 		</p>
+		<p>
+		TL;DR: Currently, all rights reserved.  Will change in the future.
+		</p>
+		<h2 id="community">Community</h2>
 		<ul>
 			<li>
-			<a href="/thought/unix-philosophy-confusing">The ``UNIX Philosophy'' is Confusing</a>
+			We have a <a href="https://mail.andrewyu.org/mailman/listinfo/evosaur-general">general discussion mailing list</a>, recommended for most matters.
 			</li>
-		</ul>
-		<h2>Licensing</h2>
-		<p>
-		Unlike most of <a href="https://www.andrewyu.org/">Andrew</a> and <a href="https://users.andrewyu.org/~hax/">Test_User</a>'s Websites, this Website conveys new ideas that may be fundemental to future computing, thus ruling out Public Domain as a ``licensing'' option.  Some type of copyleft will be used but we can't decide which specifically for now.  Until then, please contact <code>evosaur AT andrewyu DOT org</code> for permission to use.  (Basically: For now, <strong>all rights reserved</strong>.)
-		</p>
-		<h2>Community</h2>
-		<ul>
 			<li>
-			<a href="https://mail.andrewyu.org/mailman/listinfo/evosaur-general">Mailing list</a>.
+			Submit things to the developers: <code>evosaur</code> AT <code>andrewyu</code> DOT <code>org</code>.
 			</li>
 			<li>
 			Internet relay chat: <code>#evosaur</code> on <code>irc.andrewyu.org</code> port <code>6697</code> (with TLS).
